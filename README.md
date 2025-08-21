@@ -60,7 +60,6 @@ Web-based IPL auction simulation with AI-driven teams and real-time bidding.
 
 ## Contact
 
--
 - **WhatsApp:** +91 7708443985  
-- **Email:**sherjinag@gmail.com 
+- **Email:** sherjinag@gmail.com 
 - **Location:** Nagercoil, Tamil Nadu
