@@ -12,7 +12,7 @@ body {
 }
 
 /* ===== NAVBAR ===== */
-.logo{
+a{
   text-decoration: none;
 }
 nav {
@@ -872,5 +872,6 @@ justify-content: center;
   white-space: pre-wrap; /* wraps code lines */
   word-wrap: break-word;
 }
+
 
 
