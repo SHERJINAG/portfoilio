@@ -22,7 +22,7 @@ const subtitleEl = document.getElementById("subtitle");
 
 // Use span for highlighting
 const text =
-  "Hi, I’m <span class='highlight-name'>Sherjin A G</span> – AI & Web Enthusiast ";
+  "Hi, I’m Sherjin A G – AI & Web Enthusiast ";
 let index = 0;
 
 function typeEffect() {
@@ -124,3 +124,4 @@ function openModal(certId) {
 function closeModal() {
   document.getElementById("certModal").style.display = "none";
 }
+
