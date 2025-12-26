@@ -125,3 +125,15 @@ function closeModal() {
   document.getElementById("certModal").style.display = "none";
 }
 
+setTimeout(() => {
+  document.body.style.overflow = "auto"; // enable scroll
+  document.querySelector("nav").classList.add("show"); // show navbar
+}, 5000);
+
+  setTimeout(() => {
+    document.body.style.overflow = "auto"; // enable scrolling
+    const intro = document.querySelector(".intro-container");
+    if (intro) {
+      intro.style.display = "none"; // hide intro after animation
+    }
+  }, 5000);
