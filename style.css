@@ -8,7 +8,7 @@ body {
   font-family: monospace;
   
   overflow: hidden;
-
+overflow-x: hidden;
   background: #1e1e1e;
   color: #f8f8f8;
   min-height: 100vh;
@@ -322,9 +322,10 @@ nav h1 {
 /* ===== PROJECTS SECTION ===== */
 /* ===== PROJECT SECTION ===== */
 .projects {
-  padding:4rem 2rem;
+  padding:4rem 1rem;
   background:#0d0d0d; /* portfolio dark theme */
   color:#f8f8f8;
+  
 }
 h2 {
   text-align:center;
@@ -429,7 +430,7 @@ h2 {
   }
   .handwritten {
   font-family:'pacifico', cursive;
-  font-size:1.2rem;
+  font-size:1rem;
   margin-bottom:1.5rem;
   color:#22c55e;
 }
@@ -1023,16 +1024,24 @@ justify-content: center;
 }
 
 /* Mobile */
-@media(max-width:600px){
-  .project-grid{
-    grid-template-columns:repeat(2, 1fr);
+@media (max-width: 600px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-card {
+    width: 100%;
+    box-sizing: border-box;
   }
 
   /* Hide images on mobile */
-  .project-img{
-    display:none;
+  .project-img {
+    display: none;
   }
-
 }
 
 .project-card{
