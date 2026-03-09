@@ -18,23 +18,20 @@ document.querySelectorAll("#navLinks a").forEach((link) => {
 
 // ===== Typing Animation =====
 const typingEl = document.getElementById("typing");
-const subtitleEl = document.getElementById("subtitle");
-
-// Use span for highlighting
-const text =
-  "Hi, I’m Sherjin A G – AI & Web Enthusiast ";
+const text = "Hi, I’m Sherjin A G";
 let index = 0;
 
 function typeEffect() {
-  typingEl.innerHTML = text.slice(0, index);
+  typingEl.textContent = text.slice(0, index);
   index++;
-  if (index <= text.length) {
-    setTimeout(typeEffect, 70); // typing speed
-  }
+  if (index <= text.length) setTimeout(typeEffect, 70);
 }
 
 typeEffect();
 
+
+// ===== Subtitle Rotation =====
+const subtitleEl = document.getElementById("subtitle");
 // Subtitles rotating
 const subtitles = ["AI Developer", "Full-Stack Engineer", "Problem Solver"];
 
@@ -44,7 +41,6 @@ function rotateSubtitle() {
   subIndex = (subIndex + 1) % subtitles.length;
 }
 setInterval(rotateSubtitle, 3000);
-
 
 // Counter Animation
 const counters = document.querySelectorAll(".count");
@@ -125,15 +121,40 @@ function closeModal() {
   document.getElementById("certModal").style.display = "none";
 }
 
-setTimeout(() => {
-  document.body.style.overflow = "auto"; // enable scroll
-  document.querySelector("nav").classList.add("show"); // show navbar
-}, 5000);
+window.addEventListener("load", () => {
+  const intro = document.querySelector(".intro-container");
+  const nav = document.querySelector("nav");
 
+  // Disable scroll initially
+  document.body.style.overflow = "hidden";
+
+  // After typing animation ends → start slide-out
   setTimeout(() => {
-    document.body.style.overflow = "auto"; // enable scrolling
-    const intro = document.querySelector(".intro-container");
-    if (intro) {
-      intro.style.display = "none"; // hide intro after animation
-    }
-  }, 5000);
+    intro.classList.add("slide-out");
+
+    // After slide-out ends → hide intro + enable scroll + show nav
+    setTimeout(() => {
+      intro.style.display = "none";
+      document.body.style.overflow = "auto";
+      nav.classList.add("show");
+    }, 2000); // slideClose duration
+  }, 4000); // typing duration
+});
+
+
+function openModals(id) {
+  const modal = document.getElementById(id);
+
+  if (modal) {
+    modal.style.display = "flex";
+  }
+}
+
+function closeModals(id) {
+  const modal = document.getElementById(id);
+
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
