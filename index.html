@@ -120,112 +120,108 @@
     </div>
   </section>
 
-    <section class="projects" id="projects">
-    <h2>My Projects</h2>
+   <section class="projects" id="projects">
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3 class="handwritten">AI Learning Platform</h3>
-      <div class="project-split">
-        <!-- Left Side: Screenshot -->
-        <div class="project-img">
-          <img src="./imgs/dashboard.png" alt="AI Learning Platform Screenshot">
-        </div>
+<h2>My Projects</h2>
 
-        <!-- Right Side: Notebook Description + Tech Stack -->
-        <div class="project-info">
-          <p class="project-desc">
-            A smart AI-powered learning platform designed to deliver
-            personalized content, quizzes, and progress tracking.
-            Features include an interactive chatbot, real-time
-            recommendations, and analytics dashboard.
-          </p>
+<div class="project-grid">
 
-          <!-- Tech Stack (Badge Style Notes) -->
-          <div class="tech-stack">
-            <span class="note">React</span>
-            <span class="note">FastAPI</span>
-            <span class="note">MongoDB</span>
-            <span class="note">Python</span>
-            <span class="note">Bootstrap</span>
-            <span class="note">TinyLlama</span>
-          </div>
+<!-- Project 1 -->
+<div class="project-card" onclick="openModals('p1')">
+  <h3 class="handwritten">AI Learning Platform</h3>
+  <div class="project-img">
+    <img src="./imgs/dashboard.png">
+  </div>
 
-          <!-- Project Links -->
-          <div class="project-links">
-            <a href="https://github.com/SHERJINAG/Ai_powered_interview_preparation_platform" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://ai-powered-interview-preparation-platform-tand.onrender.com/" target="_blank"> Live Demo</a>
-          
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="tech-stack">
+    <span class="note">React</span>
+    <span class="note">FastAPI</span>
+    <span class="note">MongoDB</span>
+    <span class="note">Python</span>
+    <span class="note">TinyLlama</span>
+  </div>
+</div>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h3 class="handwritten">Student Learning Platform</h3>
-      <div class="project-split">
-        <div class="project-img">
-          <img src="./imgs/student.png" alt="Student Learning Platform Screenshot">
-        </div>
-        <div class="project-info">
-          <p class="project-desc">
-            An interactive platform built for students to access learning
-            materials, practice quizzes, and track academic progress.
-            Includes collaborative study groups, gamified rewards,
-            and real-time feedback for enhanced learning experiences.
-          </p>
-          <div class="tech-stack">
-            <span class="note">ReactJs</span>
-            <span class="note">NodeJs</span>
-            <span class="note">MongoDB</span>
-            <span class="note">ExpressJs</span>
-            <span class="note">CSS</span>
 
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/SHERJINAG/edu-student" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://forntend2.onrender.com/" target="_blank"> Live Demo</a>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Project 2 -->
+<div class="project-card" onclick="openModals('p2')">
+  <h3 class="handwritten">Student Learning Platform</h3>
 
-    <!-- Project 3 -->
-    <div class="project-card">
-      <h3 class="handwritten">IPL Auction Game</h3>
-      <div class="project-split">
-        <div class="project-img">
-          <img src="./imgs/ipl.png" alt="IPL Auction Game Screenshot">
-        </div>
-        <div class="project-info">
-          <p class="project-desc">
-            A web-based IPL auction simulation game where users can bid
-            for players while competing against AI-driven teams.
-            Features include player stats display, Inbuild bidding logic,
-            real-time purse management, and an engaging user experience.
-          </p>
-          <div class="tech-stack">
-            <span class="note">HTML</span>
-            <span class="note">CSS</span>
-            <span class="note">JavaScript</span>
+  <div class="project-img">
+    <img src="./imgs/student.png">
+  </div>
 
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/SHERJINAG/ipl_auction_game" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://sherjinag.github.io/ipl_auction_game/auction.html" target="_blank"> Live Demo</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="tech-stack">
+    <span class="note">React</span>
+    <span class="note">Node</span>
+    <span class="note">MongoDB</span>
+    <span class="note">Express</span>
+  </div>
+</div>
 
-  </section>
+
+<!-- Project 3 -->
+<div class="project-card" onclick="openModals('p3')">
+
+  <h3 class="handwritten">IPL Auction Game</h3>
+
+  <div class="project-img">
+    <img src="./imgs/ipl.png">
+  </div>
+
+  <div class="tech-stack">
+    <span class="note">HTML</span>
+    <span class="note">CSS</span>
+    <span class="note">JavaScript</span>
+  </div>
+</div>
+
+
+<!-- Dummy Projects -->
+<div class="project-card" onclick="openModals('p4')">
+<h3 class="handwritten">Crime Data Dashboard</h3>
+<div class="project-img">
+<img src="./imgs/india-crime.png">
+</div>
+<div class="tech-stack">
+<span class="note">Python</span>
+<span class="note">Pandas</span>
+<span class="note">NumPy</span>
+<span class="note">Folium</span>
+</div>
+</div>
+
+
+<div class="project-card" onclick="openModals('p5')">
+<h3 class="handwritten">Indian Election Analysis</h3>
+<div class="project-img">
+<img src="./imgs/india-election.png">
+</div>
+<div class="tech-stack">
+<span class="note">Python</span>
+<span class="note">Pandas</span>
+<span class="note">NumPy</span>
+<span class="note">Folium</span>
+<span class="note">Google Colab</span>
+</div>
+</div>
+
+
+<div class="project-card" onclick="openModals('p6')">
+<h3 class="handwritten">Attendance Tracker</h3>
+<div class="project-img">
+<img src="./imgs/attedence.png">
+</div>
+<div class="tech-stack">
+<span class="note">React</span>
+<span class="note">Node</span>
+<span class="note">MongoDB</span>
+</div>
+</div>
+
+</div>
+
+</section>
 
 
   <!-- Add Devicon CDN in <head> -->
@@ -324,6 +320,13 @@
           </svg>
           <div class="icon"><i class="devicon-fastapi-plain "></i></div>
           <p>FastAPI</p>
+        </div>
+        <div class="skill" data-percent="80"><svg class="progress-ring" width="120" height="120">
+            <circle class="progress-ring-bg" cx="60" cy="60" r="50" />
+            <circle class="progress-ring-fill" cx="60" cy="60" r="50" />
+          </svg>
+          <div class="icon"><i class="devicon-nextjs-plain "></i></div>
+          <p>Next.js</p>
         </div>
       </div>
     </div>
@@ -616,12 +619,155 @@
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-  <p>Developed by <strong>Sherjin A G</strong> © 2025 | All Rights Reserved</p>
+  <p>Developed by <strong>Sherjin A G</strong> © 2026 | All Rights Reserved</p>
 </footer>
+
+<!-- Modal -->
+<!-- Modal 1 -->
+<div id="p1" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModals('p1')">&times;</span>
+
+<h2>AI Learning Platform</h2>
+
+<p>
+A smart AI-powered learning platform designed to deliver personalized content, quizzes, and progress tracking. 
+Features include an interactive chatbot, real-time recommendations, and an analytics dashboard that helps learners 
+monitor their performance and identify areas for improvement.
+</p>
+
+<div class="modal-links">
+<a href="https://github.com/SHERJINAG/Ai_powered_interview_preparation_platform">GitHub</a>
+<a href="https://ai-powered-interview-preparation-platform-tand.onrender.com/">Live Demo</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- Modal 2 -->
+<div id="p2" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModals('p2')">&times;</span>
+
+<h2>Student Learning Platform</h2>
+
+<p>
+An interactive platform built for students to access learning materials, practice quizzes, and track academic progress.
+Includes collaborative study groups, gamified rewards, and real-time feedback to improve engagement and learning outcomes.
+</p>
+
+<div class="modal-links">
+<a href="https://github.com/SHERJINAG/edu-student">GitHub</a>
+<a href="https://forntend2.onrender.com/">Live Demo</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- Modal 3 -->
+<div id="p3" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModals('p3')">&times;</span>
+
+<h2>IPL Auction Game</h2>
+
+<p>
+A web-based IPL auction simulation game where users can bid for players while competing against AI-driven teams.
+Features include player statistics display, inbuilt bidding logic, real-time purse management, and a competitive
+auction experience that mimics the real IPL auction environment.
+</p>
+
+<div class="modal-links">
+<a href="https://github.com/SHERJINAG/ipl_auction_game">GitHub</a>
+<a href="https://sherjinag.github.io/ipl_auction_game/auction.html">Live Demo</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- Dummy Modals -->
+<!-- Modal 4 : Crime Data Dashboard -->
+<div id="p4" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModals('p4')">&times;</span>
+
+    <h2>India Crime Data Dashboard</h2>
+
+    <p>
+      An interactive dashboard that visualizes crime statistics across India using a dynamic map interface.
+      Users can click on each district to explore detailed crime insights and patterns.
+      The project focuses on making large crime datasets easy to explore through intuitive geographic navigation
+      and interactive district-level analysis.
+    </p>
+
+    <div class="modal-links">
+      <a href="https://github.com/SHERJINAG/India-data-dashboards" target="_blank">GitHub</a>
+      <a href="https://sherjinag.github.io/India-data-dashboards/" target="_blank">Live Demo</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal 5 : India Election Results -->
+<div id="p5" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModals('p5')">&times;</span>
+
+    <h2>India Election Results 2024 Dashboard</h2>
+
+    <p>
+      A visual dashboard presenting the results of the 2024 Indian General Elections.
+      The application displays constituency-level election outcomes and highlights
+      party-wise victories across India using an interactive map. Users can explore
+      election results geographically to understand political distribution and
+      constituency trends across the country.
+    </p>
+
+    <div class="modal-links">
+      <a href="https://github.com/SHERJINAG/India-data-dashboards" target="_blank">GitHub</a>
+      <a href="https://sherjinag.github.io/India-data-dashboards/" target="_blank">Live Demo</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal 6 : Student Attendance Tracker -->
+<div id="p6" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModals('p6')">&times;</span>
+
+    <h2>Student Attendance Tracker</h2>
+
+    <p>
+      Attendance Tracker is a MERN stack web application designed for educational institutions
+      to manage student attendance efficiently. The system provides role-based access for
+      Admins and Teachers, allows daily attendance marking, student–teacher mapping,
+      monthly attendance reports, and export functionality in CSV and PDF formats.
+      It simplifies attendance management while providing accurate reporting tools.
+    </p>
+
+    <div class="modal-links">
+      <a href="https://github.com/SHERJINAG/Student-Attendence-Tracker" target="_blank">GitHub</a>
+      <a href="https://student-attendence-tracker-2gfe.onrender.com/" target="_blank">Live Demo</a>
+    </div>
+
+  </div>
+</div>
 
   <script src="script.js"></script>
   <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-QF6GA/j4HqfF0xHjY8fUQm/1/0ZtB7FQH4wrFpp9tO/fJX3BfK1D5S+4HUeEr3yX" crossorigin="anonymous"></script>
+
 
 </body>
 
